@@ -128,3 +128,25 @@ If the module is not supported in [Expo Go](https://expo.dev/go), you can create
 ### Excluding a third-party library from version checks
 
 If you have a specific version of a third-party library installed and want it to be excluded from version checks performed by `npx expo install`, `npx expo-doctor`, or `npx expo start`, use the [`expo.install.exclude`](/versions/latest/config/package-json/#exclude) property in the **package.json** file.
+npx run 
+import { CameraView } from 'expo-camera';
+import * as Contacts from 'expo-contacts';
+import { Gyroscope } from 'expo-sensors';
+npx expo install expo-camera expo-contacts expo-sensors
+npx create-expo-app my-app --template bare-minimum
+Install Expo SDK packages in existing React Native apps
+
+Learn more about configuring projects created with npx @react-native-community/cli@latest init to Expo SDK packages.
+import { Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Hello, world!</Text>
+    </View>
+  );
+}
+npx expo install expo-device
+npx npm-home --github react-native-localize
+npx npm-home @react-navigation/native
+npx expo run start 
